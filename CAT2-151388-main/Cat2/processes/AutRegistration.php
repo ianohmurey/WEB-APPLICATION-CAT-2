@@ -68,7 +68,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <input type="submit" value="Submit">
     </form>
     <br
-        <h3><center> VIEW REGISTERED AUTHORS</center></h3>
+        <h3><center> VIEW THE REGISTERED AUTHORS</center></h3>
     <br>
     
 <center> <a href="../ViewAuthors.php">CLICK HERE</a></center>
