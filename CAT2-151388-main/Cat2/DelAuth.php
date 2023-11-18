@@ -14,7 +14,7 @@ if (isset($_GET['DeleteId'])) {
     header("Location: ViewAuthors.php");
     exit();
 } else {
-    die("Invalid request");
+    die("This is an Invalid request");
 }
 
 // Close the database connection
