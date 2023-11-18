@@ -1,5 +1,5 @@
 <?php
-// Include the database connection file
+// Includedatabase connection file
 require_once "configs/DbConn.php";
 
 // Check if the EditId parameter is set in the URL
@@ -11,12 +11,12 @@ if (isset($_GET['EditId'])) {
     $stmt->execute([$authorId]);
     $author = $stmt->fetch(PDO::FETCH_ASSOC);
 
-    // Check if the author exists
+    // Check if author exists
     if (!$author) {
         die("Author not found");
     }
 } else {
-    die("Invalid request");
+    die("An Invalid request");
 }
 
 // Check if the form is submitted
