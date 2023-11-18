@@ -1,12 +1,12 @@
 <?php
-// Include the database connection file
+// database connection file
 require_once "configs/DbConn.php";
 
-// Check if the AuthorId parameter is set in the URL
+// Check AuthorId parameter is set in the URL
 if (isset($_GET['DeleteId'])) {
     $authorId = $_GET['DeleteId'];
 
-    // Delete the author from the database
+    // Delete the author from database
     $deleteStmt = $pdo->prepare("DELETE FROM authorstb WHERE AuthorId = ?");
     $deleteStmt->execute([$authorId]);
 
@@ -17,6 +17,6 @@ if (isset($_GET['DeleteId'])) {
     die("Invalid request");
 }
 
-// Close the database connection
+// Close database connection
 $pdo = null;
 ?>
