@@ -13,7 +13,7 @@ if (isset($_GET['EditId'])) {
 
     // Check if the author exists
     if (!$author) {
-        die("Author not found");
+        die("Author is not found");
     }
 } else {
     die("Invalid request");
